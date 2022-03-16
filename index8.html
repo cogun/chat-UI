@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Frontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style8.css">
+    <script src="main7.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout h-screen relative">
+        <div class="first absolute sm:relative flex justify-center sm:justify-start items-center flex-col bg-slate-700 p-3">
+        </div>
+        <div class="second absolute sm:relative h-screen flex flex-col border-r border-slate-700 bg-slate-800">
+            <div class="profile border-b border-slate-700 flex justify-center items-center p-2 text-slate-200 ">
+                <div class="profile-with-status relative" style="width: 40px;height: 40px;">
+                    <img src="https://source.unsplash.com/35x35/?cool" alt="" width="35" height="35" class="rounded-lg">
+                    <i
+                        class="fa fa-circle text-green-500 absolute bottom-0 right-0 m-1 rounded-full text-xs border-slate-700 rounded-full"></i>
+                </div>
+                <p class="grow text-md font-medium">Punit Verma <i class="fa fa-bolt text-xs"></i></p>
+                <i class="icon-close"></i>
+                <i class="icon-arrow-right-circle forward text-md block sm:hidden mx-2"></i>
+                <!-- <i class="icon-plus hidden sm:block"></i> -->
+                <i class="icon-plus hidden"></i>
+            </div>
+            <div class="options overflow-auto text-sm">
+                <div
+                    class="text-slate-200 option-tile flex justify-center items-center px-3 py-2 hover:bg-slate-900 cursor-pointer">
+                    <i class="icon-magnifier text-md"></i>
+                    <p class="grow ml-2 ">Quick Find</p>
+                </div>
+                <div
+                    class="text-slate-200 option-tile flex justify-center items-center px-3 py-2 hover:bg-slate-900 cursor-pointer">
+                    <i class="icon-clock text-md"></i>
+                    <p class="grow ml-2 ">All updates</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        23
+                    </div>
+                </div>
+                <div
+                    class="text-slate-200 option-tile flex justify-center items-center px-3 py-2 hover:bg-slate-900 cursor-pointer">
+                    <i class="icon-user text-md"></i>
+                    <p class="grow ml-2 ">All members</p>
+                </div>
+                <div
+                    class="text-slate-200 option-tile flex justify-center items-center px-3 py-2 hover:bg-slate-900 cursor-pointer">
+                    <i class="icon-settings text-md"></i>
+                    <p class="grow ml-2 ">Settings</p>
+                </div>
+            </div>
+            <div class="options-channels overflow-auto p-3">
+                <div class="channels-head flex text-xs font-medium px-3 py-1 text-slate-400">
+                    <i class="fa fa-sort-up"></i>
+                    <p class="ml-2">CHANNELS</p>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <i class="icon-star text-md text-yellow-400"></i>
+                    <p class="grow ml-2 ">Design</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        7
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <i class="icon-phone text-md text-red-400"></i>
+                    <p class="grow ml-2 ">Customer Supports</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        36
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <i class="icon-support text-md text-orange-400"></i>
+                    <p class="grow ml-2 ">Sales & Marketing</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        18
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <i class="icon-wrench text-md text-purple-400"></i>
+                    <p class="grow ml-2 ">Tech Support</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        4
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-400 text-sm option-tile flex justify-center items-center px-3 py-1 rounded-md cursor-pointer">
+                    <i class="fa fa-plus text-xs"></i>
+                    <p class="grow ml-2 ">Create Channel</p>
+                </div>
+            </div>
+            <div class="options-messages p-3">
+                <div class="channels-head flex text-xs font-medium px-3 py-1 text-slate-400">
+                    <i class="fa fa-sort-up"></i>
+                    <p class="ml-2">DIRECT MESSAGES</p>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <div class="profile-with-status relative" style="width: 40px;height: 40px;">
+                        <img src="https://source.unsplash.com/35x35/?cool" alt="" width="35" height="35"
+                            class="rounded-lg">
+                        <i
+                            class="fa fa-circle text-green-500 absolute bottom-0 right-0 m-1 rounded-full text-xs border-slate-700 rounded-full"></i>
+                    </div>
+                    <p class="grow ml-2 ">Eleaner Pan</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        4
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <div class="profile-with-status relative" style="width: 40px;height: 40px;">
+                        <img src="https://source.unsplash.com/35x35/?new" alt="" width="35" height="35"
+                            class="rounded-lg">
+                        <i
+                            class="fa fa-circle text-green-500 absolute bottom-0 right-0 m-1 rounded-full text-xs border-slate-700 rounded-full"></i>
+                    </div>
+                    <p class="grow ml-2 ">Qwet Cod</p>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <div class="profile-with-status relative" style="width: 40px;height: 40px;">
+                        <img src="https://source.unsplash.com/35x35/?colors" alt="" width="35" height="35"
+                            class="rounded-lg">
+                        <i
+                            class="fa fa-circle text-green-500 absolute bottom-0 right-0 m-1 rounded-full text-xs border-slate-700 rounded-full"></i>
+                    </div>
+                    <p class="grow ml-2 ">Cogun cod</p>
+                </div>
+                <div
+                    class="my-1 text-slate-200 text-sm option-tile flex justify-center items-center px-3 py-1 hover:bg-slate-600 rounded-md cursor-pointer">
+                    <div class="profile-with-status relative" style="width: 40px;height: 40px;">
+                        <img src="https://source.unsplash.com/35x35/?random" alt="" width="35" height="35"
+                            class="rounded-lg">
+                        <i
+                            class="fa fa-circle text-green-500 absolute bottom-0 right-0 m-1 rounded-full text-xs border-slate-700 rounded-full"></i>
+                    </div>
+                    <p class="grow ml-2 ">Allox aoz</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        8
+                    </div>
+                </div>
+                <div
+                    class="my-1 text-slate-400 text-sm option-tile flex justify-center items-center px-3 py-1 rounded-md cursor-pointer">
+                    <i class="fa fa-plus text-xs"></i>
+                    <p class="grow ml-2 ">Create Chats</p>
+                </div>
+            </div>
+        </div>
+        <div class="third absolute sm:relative h-screen flex flex-col  bg-slate-900 border-r border-slate-700 ">
+            <div class="border-b border-slate-700 contact-head bg-slate-800 p-2 flex justify-around items-center">
+                <div
+                    class="chips w-24 text-slate-200 rounded-sm hover:bg-slate-500 cursor-pointer flex justify-center items-center p-2">
+                    <p class="text-slate-200 mr-2">Unread</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        4
+                    </div>
+                </div>
+                <div
+                    class="chips w-24 text-slate-200 rounded-sm bg-slate-500 hover:bg-slate-500 cursor-pointer flex justify-center items-center p-2">
+                    <p class="text-slate-200 mr-2">Open</p>
+                    <div class="font-medium noti text-xs px-2 py-1 bg-slate-600 rounded-full">
+                        9
+                    </div>
+                </div>
+                <div
+                    class="chips w-24 text-slate-200 rounded-sm hover:bg-slate-500 cursor-pointer flex justify-center items-center p-2">
+                    <p class="text-slate-200 mr-2">Done</p>
+                </div>
+                <div
+                    class="hidden lg:hidden md:hidden sm:block chips w-24 text-slate-100 rounded-sm hover:bg-slate-500 cursor-pointer flex justify-center items-center p-2">
+                    <p class="text-slate-200 mr-2">Newest</p>
+                    <i class="fa fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="search flex bg-slate-700 m-3 justify-center items-center text-slate-100 rounded-sm">
+                <i class="icon-magnifier mx-2"></i>
+                <input type="text" name="" id="" placeholder="search here..." class="p-2 grow bg-transparent border-0">
+            </div>
+            <div class="chat-tiles grow overflow-auto">
+            </div>
+        </div>
+        <div class="fourth absolute sm:relative h-screen  bg-slate-900 flex flex-col">
+            <div
+                class="border-b text-slate-100 border-slate-700 contact-head bg-slate-800 p-2 flex justify-around items-center">
+                <div
+                    class="profiles text-slate-200 rounded-sm hover:bg-slate-500 cursor-pointer flex justify-center items-center p-1">
+                    <img src="https://source.unsplash.com/32x32/?avatar" alt="" class="rounded-lg">
+                </div>
+                <p class="font-medium text-sm mr-2 grow">Punit,Cogun,Zos</p>
+                <i class="icon-arrow-left-circle back text-md block sm:hidden mx-2"></i>
+                <i class="icon-camera text-md mx-2"></i>
+                <i class="icon-phone text-sm mx-2"></i>
+                <i class="icon-heart text-sm mx-2"></i>
+            </div>
+            <div class="msg-body grow overflow-auto">
+                <div class="msg-tile flex justify-start items-start p-3">
+                    <img src="https://source.unsplash.com/40x40/?avatar" width="40" height="40" alt=""
+                        class="mr-2 rounded-lg">
+                    <div class="msg-bubble relative w-2/4 text-slate-300 bg-slate-700 p-3 rounded-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi facere expedita totam aliquam et
+                        in maxime dolor porro dicta.
+                        <div class="emoji absolute bg-slate-600 px-2 py-1 rounded-lg">
+                            <span>&#128512;</span>
+                            <span class="text-xs">6</span>
+                            <span class="text-slate-300 text-xs">11:40 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-tile my-2 flex justify-start flex-row-reverse items-start p-3">
+                    <img src="https://source.unsplash.com/40x40/?cool" width="40" height="40" alt=""
+                        class="ml-2 rounded-lg">
+                    <div class="msg-bubble relative w-2/4 text-slate-300 bg-blue-700 p-3 rounded-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi facere expedita totam aliquam et
+                        in maxime dolor porro dicta.
+                        <div class="emoji absolute bg-blue-600 px-2 py-1 rounded-lg">
+                            <span>&#128512;</span>
+                            <span class="text-xs">6</span>
+                            <span class="text-slate-300 text-xs">11:40 AM</span>
+                            <i class="fa fa-eye text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-tile flex justify-start flex-row-reverse items-start p-3">
+                    <img src="https://source.unsplash.com/40x40/?cool" width="40" height="40" alt=""
+                        class="ml-2 rounded-lg">
+                    <div class="msg-bubble relative w-2/4 text-slate-300 bg-blue-700 p-3 rounded-lg">
+                        <img src="https://source.unsplash.com/300x200/?cool" class="rounded-lg" alt="">
+                        <div class="emoji absolute bg-blue-600 px-2 py-1 rounded-lg">
+                            <span>&#128512;</span>
+                            <span class="text-xs">6</span>
+                            <span class="text-slate-300 text-xs">11:40 AM</span>
+                            <i class="fa fa-eye text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-tile my-2 flex justify-start items-start p-3">
+                    <img src="https://source.unsplash.com/40x40/?avatar" width="40" height="40" alt=""
+                        class="mr-2 rounded-lg">
+                    <div class="msg-bubble relative text-center w-2/4 text-slate-300 bg-slate-700 p-3 rounded-lg">
+                        <i
+                            class="fa fa-fire bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-9xl"></i>
+                        <div class="emoji absolute bg-slate-600 px-2 py-1 rounded-lg">
+                            <span>&#128512;</span>
+                            <span class="text-xs">6</span>
+                            <span class="text-slate-300 text-xs">11:40 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-send flex text-slate-300 justify-center items-center p-3 bg-slate-800">
+                <i class="fa fa-plus mx-3"></i>
+                <input type="text" class="rounded-md border-0 grow bg-slate-900" placeholder="punit,cogun,zoaa">
+                <i class="icon-microphone mx-3"></i>
+                <i class="icon-paper-plane mx-3"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
